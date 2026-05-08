@@ -1,7 +1,11 @@
+:root {
+    --main-purple: rgb(197, 105, 213);
+}
+
 .about-container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(180, 135, 225);
+    background-color: rgb(211, 159, 220);
     align-items: center;
     padding: 20px 0px 60px 0px;
     border-style: dashed;
@@ -20,17 +24,16 @@
     margin-bottom: 30px;
 }
 .about-content-text{
-    font-family: "Courier";
+    font-family: "Helvetica";
     font-weight: 900;
     color: brown;
     font-size: 15px;
 }
 body{
-    background: #EEAECA;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: #d7d7d7;
 }
 .header-bar{
-    background-color: blue;
+    background-color: rgb(243, 243, 243);
     top:0;
     left:0;
     right:0;
@@ -41,36 +44,45 @@ body{
     padding:5px;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color: pink;
+    border-bottom-color: var(--main-purple);
+    font-family:Helvetica, sans-serif
 }
 .header-bar-left{
     display:flex;
-    align-items: left;
+    justify-content: left;
+    align-items: center;
     flex-direction: row;
-    background-color: turquoise;
+    font-weight: bolder;
+    color: var(--main-purple);
+    position: relative
+
 }
 .header-bar-right{
     display:flex;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    background-color: orange;
     gap: 8px;
 }
 .header-bar button {
     transition-duration: 0.2s;
-    background-color: saddlebrown;
+    background-color: var(--main-purple);
     cursor: pointer;
-    border-style: solid;
-    border-color: pink;
+    border-style: none;
+    border-radius: 8px;
+    padding:10px;
+    color: white;
+    font-weight:bolder
 }
 .header-bar button:hover{
-    background-color: maroon;
-    border-radius: 100%;
+    background-color: rgb(163, 117, 171);
 }
-.header-bar-left-image{
+.header-bar-left img{
     border-radius: 8px;
-    width:90px;
-    height:90px;
+    width:40px;
+    height:40px;
+    border-style: solid;
     border-width: 2px;
-    border-color: white;
+    border-color: var(--main-purple);
+    margin-right: 15px;
 }
