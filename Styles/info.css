@@ -115,6 +115,13 @@ img{
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap:8px;
 }
+
+.grid-five{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, minmax(50px, 1fr));
+  gap:8px;
+}
   
 .grid-entry{
   width: 100%;
