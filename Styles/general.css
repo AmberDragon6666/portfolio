@@ -14,8 +14,10 @@
     border-color: var(--main-purple);
     background: #eed5f3;
     background: linear-gradient(0deg, rgb(248, 211, 255) 0%, rgba(255, 255, 255, 1) 100%);}
-.about-container-border-container{
+
+    .about-container-border-container{
     display:flex;
+    position: relative;
     margin: 30px;
     margin-top: 80px;
     justify-content: center;
