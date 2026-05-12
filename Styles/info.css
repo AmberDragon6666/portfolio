@@ -1,3 +1,12 @@
+hr{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width:100%;
+  border-color: var(--main-purple);
+  margin:20px 0px;
+}
+
 .info-title{
   font-family: roboto;
   font-weight: bold;
@@ -16,17 +25,11 @@
 .floating-image-left{
   float: left;
   margin:8px 8px 8px 0px;
-  border-color: var(--main-purple);
-  border-style: solid;
-  border-radius: 6px;
 }
 
 .floating-image-right{
   float: right;
   margin:8px 0px 8px 8px;
-  border-color: var(--main-purple);
-  border-style: solid;
-  border-radius: 6px;
 }
 
 .info-container{
@@ -57,5 +60,63 @@
   position:absolute;
   left:20px;
   top:15px;
-  padding: 8px;;
+}
+
+.info-back-button:hover{
+    background-color: rgb(213, 119, 230);
+}
+
+button{
+  padding: 8px;
+  transition-duration: 0.2s;
+  background-color: var(--main-purple);
+  cursor: pointer;
+  border-style: none;
+  border-radius: 8px;
+  padding:15px;
+  color: white;
+  font-weight:bolder;
+  
+  display:block
+}
+
+button:hover{
+    background-color: rgb(213, 119, 230);
+}
+
+a {
+  text-decoration: none;
+}
+
+img{
+  border-color: var(--main-purple);
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+}
+
+.grid-two{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  gap:8px;
+}
+
+.grid-three{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  gap:8px;
+}
+
+.grid-four{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  gap:8px;
+}
+  
+.grid-entry{
+  width: 100%;
+  object-fit: contain;
 }

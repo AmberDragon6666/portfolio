@@ -48,7 +48,7 @@ body{
     background: rgb(92, 76, 95);
 }
 .header-bar{
-    
+    z-index: 10;
     background-color: rgb(243, 243, 243);
     top:0;
     left:0;
@@ -94,7 +94,7 @@ body{
     font-weight:bolder
 }
 .header-bar button:hover{
-    background-color: rgb(163, 117, 171);
+    background-color: rgb(213, 119, 230);
 }
 .header-bar-left img{
     border-radius: 8px;

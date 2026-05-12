@@ -25,6 +25,7 @@
 
 .column-entry:hover{  
   background: rgb(248, 211, 255);
+  cursor: pointer;
 }
 
 .column-image{
